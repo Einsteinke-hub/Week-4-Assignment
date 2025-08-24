@@ -18,11 +18,11 @@ def main():
         print(f"✅ File has been modified and saved as: {new_filename}")
 
     except FileNotFoundError:
-        print("❌ Error: The file does not exist. Please check the filename.")
+        print("Error!: The file does not exist. Please check the filename.")
     except PermissionError:
-        print("❌ Error: You don’t have permission to read this file.")
+        print("Error!: You don’t have permission to read this file.")
     except Exception as e:
-        print(f"⚠️ Unexpected error: {e}")
+        print(f"Unexpected error!: {e}")
 
 if __name__ == "__main__":
     main()
